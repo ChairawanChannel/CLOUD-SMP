@@ -15,48 +15,74 @@ body {
   background-color: #0c1228;
 }
 /* Navbar Start */
+/* Navbar Start */
 .navbar {
-  background-color: #060c1f;
   position: sticky;
   top: 0;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  z-index: 1000;
+  background-color: #060c1f;
   padding: 10px 20px;
-}
-
-.navbar-left {
   display: flex;
+  justify-content: flex-start; /* Align logo dan links ke kiri */
   align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.brand {
-  text-decoration: none;
+/* Logo Container */
+.navbar .logo {
+  font-size: 24px;
   font-weight: bold;
   color: #f3f3f3;
-  margin-right: 20px;
-  font-size: 1.2em;
-}
-.brand span {
-  color: #f5a425;
-}
-.nav-link {
-  color: #f3f3f3;
-  margin-right: 15px;
-  text-decoration: none;
-  font-size: 1em;
+  text-transform: uppercase;
+  margin-right: 30px; /* Spasi antara logo dan links */
   display: flex;
   align-items: center;
+}
+.navbar .logo span {
+  color: #f5a425;
+}
+
+/* Nav Links */
+.navbar .nav-links {
+  display: flex;
+  gap: 20px; /* Spasi antar links */
+}
+
+/* Styling untuk nav-link */
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+/* Underline animation on hover */
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f5a425;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::before {
+  width: 100%;
 }
 
 .nav-link:hover {
-  text-decoration: underline;
+  color: #ca881d;
 }
 
+/* Navbar-right stays intact for profile and dropdown */
 .navbar-right {
   display: flex;
   align-items: center;
+  position: relative;
+  margin-left: auto; /* Posisikan navbar-right di ujung kanan */
 }
 
 .profile {
@@ -87,7 +113,7 @@ body {
   align-items: center;
 }
 .btn-carousel {
-  background-color: #f5a425;;
+  background-color: #f5a425;
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -105,7 +131,6 @@ body {
   font-size: 0.5em;
   color: #eee;
 }
-
 
 .carousel-text {
   position: absolute;
@@ -208,7 +233,7 @@ body {
 }
 .rank-harga {
   font-size: 1.2em;
-  color: #f3f3f3;
+  color: #4495ff;
   margin-bottom: 5px;
 }
 .rank-container {
@@ -304,7 +329,7 @@ body {
 
 .topup-harga {
   font-size: 1.2em;
-  color: #f3f3f3;
+  color: #4495ff;
   margin-bottom: 20px;
 }
 
