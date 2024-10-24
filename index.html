@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cloud SMP Navigation</title>
+    <title>Cloud SMP</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.cdnfonts.com/css/sf-pro-display"
@@ -14,16 +14,17 @@
     <!-- Navbar Start -->
     <nav class="navbar">
       <div class="navbar-left">
-        <span class="brand">CLOUD SMP</span>
+        <a href="#home" class="brand">CLOUD <span>SMP</span></a>
         <div class="hamburger" onclick="toggleMenu()">
           <div class="line"></div>
           <div class="line"></div>
           <div class="line"></div>
         </div>
-        <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">Store</a>
-        <a href="#" class="nav-link">Vote</a>
-        <a href="#" class="nav-link">Feedback</a>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#ranks" class="nav-link">Ranks</a>
+        <a href="#topup" class="nav-link">Topup</a>
+        <a href="#feedback" class="nav-link">Feedback</a>
+        <a href="#vote" class="nav-link">Vote</a>
       </div>
       <div class="navbar-right">
         <!-- Profile placeholder -->
@@ -33,26 +34,34 @@
       </div>
     </nav>
     <!-- Navbar End -->
-    <!-- Carrousel Start -->
-    <div class="carousel-container">
-      <div class="carousel-slide active">
-        <img src="assets/image/2024-09-25_15.54.33.png" alt="" />
-      </div>
-      <div class="carousel-slide">
-        <p class="carousel-text">
-          <img src="assets/image/2024-10-08_22.59.03.png" alt="" />
-        </p>
-      </div>
-      <div class="carousel-slide">
-        <img src="assets/image/2024-10-04_19.52.50.png" alt="" />
+
+    <!-- Carousel Start -->
+    <div id="home" class="carousel-container">
+      <div class="carousel-text">
+        <h2>Welcome to Cloud SMP</h2>
+        <p>Explore the server and enjoy your adventure</p>
+        <button class="btn-carousel">Join the Server</button>
+        <p class="player-join-carousel">Player Join 0</p>
       </div>
 
+      <div class="carousel-slide active">
+        <img src="assets/image/2024-09-25_15.54.33.png" alt="Image 1" />
+      </div>
+      <div class="carousel-slide">
+        <img src="assets/image/2024-10-08_22.59.03.png" alt="Image 2" />
+      </div>
+      <div class="carousel-slide">
+        <img src="assets/image/2024-10-04_19.52.50.png" alt="Image 3" />
+      </div>
+
+      <!-- Navigation Buttons -->
       <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
       <button class="next-btn" onclick="nextSlide()">&#10095;</button>
     </div>
-    <!-- Carrousel End -->
+    <!-- Carousel End -->
+
     <!-- About Start -->
-    <div class="about">
+    <div id="about" class="about">
       <h2 class="title-about">Sejarah singkat Cloud SMP?</h2>
       <p class="detail-about">
         Cloud SMP adalah sebuah server minecraft yang berdiri sejak 2021. Cloud
@@ -62,90 +71,102 @@
       </p>
     </div>
     <!-- About End -->
+
     <!-- Ranks Start -->
-    <div class="ranks">
+    <div id="ranks" class="ranks">
       <h2 class="title-ranks">Ranks</h2>
       <div class="rank-container">
         <div class="rank-box">
           <h3 class="rank-name">Cloud+</h3>
+          <p class="rank-harga">Rp20.000</p>
           <p class="rank-description">
-            Staff adalah rank yang paling tinggi di Cloud SMP. Staff memiliki
-            hak untuk mengatur server, mengatur rank, dan mengatur peraturan di
-            Cloud SMP.
+            • /fly <br />• /heal <br />
+            • /wings (Unlock 3 Wings) <br />
+            • /Hat (Unlock 3 Hat) <br />• 20000 CC
           </p>
+          <button class="rank-button">Beli</button>
         </div>
         <div class="rank-container">
           <div class="rank-box">
             <h3 class="rank-name">Sky</h3>
+            <p class="rank-harga">Rp20.000</p>
             <p class="rank-description">
-              Staff adalah rank yang paling tinggi di Cloud SMP. Staff memiliki
-              hak untuk mengatur server, mengatur rank, dan mengatur peraturan
-              di Cloud SMP.
+              • /fly <br />• /heal <br />
+              • /wings (Unlock 3 Wings) <br />
+              • /Hat (Unlock 3 Hat) <br />• 20000 CC
             </p>
+            <button class="rank-button">Beli</button>
           </div>
         </div>
         <div class="rank-container">
           <div class="rank-box">
             <h3 class="rank-name">Galaxy</h3>
+            <p class="rank-harga">Rp20.000</p>
             <p class="rank-description">
-              Staff adalah rank yang paling tinggi di Cloud SMP. Staff memiliki
-              hak untuk mengatur server, mengatur rank, dan mengatur peraturan
-              di Cloud SMP.
+              • /fly <br />• /heal <br />
+              • /wings (Unlock 3 Wings) <br />
+              • /Hat (Unlock 3 Hat) <br />• 20000 CC
             </p>
+            <button class="rank-button">Beli</button>
           </div>
         </div>
         <div class="rank-container">
           <div class="rank-box">
             <h3 class="rank-name">Star</h3>
+            <p class="rank-harga">Rp20.000</p>
             <p class="rank-description">
-              Staff adalah rank yang paling tinggi di Cloud SMP. Staff memiliki
-              hak untuk mengatur server, mengatur rank, dan mengatur peraturan
-              di Cloud SMP.
+              • /fly <br />• /heal <br />
+              • /wings (Unlock 3 Wings) <br />
+              • /Hat (Unlock 3 Hat) <br />• 20000 CC
             </p>
+            <button class="rank-button">Beli</button>
           </div>
         </div>
       </div>
     </div>
     <!-- Ranks End -->
+
     <!-- Topup Start -->
-    <div class="topup">
-        <h2 class="title-topup">Topup</h2>
-        <div class="topup-container-wrapper"> <!-- New Wrapper -->
-          <div class="topup-container">
-            <h3 class="topup-paket">Paket 1</h3>
-            <p class="topup-description">
-              Cloud Coins : 50.000CC <br />Cloud Premium Keys : 2x Keys <br />
-              Cloud Basic Keys : 5x Keys <br /> Cloud Cosmetic Keys : 3x Keys
-            </p>
-            <p class="topup-harga">Harga: Rp 50.000</p>
-            <button class="topup-button">Beli</button>
-          </div>
-          <div class="topup-container">
-            <h3 class="topup-paket">Paket 2</h3>
-            <p class="topup-description">
-              Cloud Coins : 60.000CC <br />Cloud Premium Keys : 5x Keys <br />
-              Cloud Basic Keys : 6x Keys <br /> Cloud Cosmetic Keys : 3x Keys
-            </p>
-            <p class="topup-harga">Harga: Rp 60.000</p>
-            <button class="topup-button">Beli</button>
-          </div>
+    <div id="topup" class="topup">
+      <h2 class="title-topup">Topup</h2>
+      <div class="topup-container-wrapper">
+        <div class="topup-container">
+          <h3 class="topup-paket">Paket 1</h3>
+          <p class="topup-description">
+            Cloud Coins : 50.000CC <br />Cloud Premium Keys : 2x Keys <br />
+            Cloud Basic Keys : 5x Keys <br />
+            Cloud Cosmetic Keys : 3x Keys
+          </p>
+          <p class="topup-harga">Harga: Rp 50.000</p>
+          <button class="topup-button">Beli</button>
+        </div>
+        <div class="topup-container">
+          <h3 class="topup-paket">Paket 2</h3>
+          <p class="topup-description">
+            Cloud Coins : 60.000CC <br />Cloud Premium Keys : 5x Keys <br />
+            Cloud Basic Keys : 6x Keys <br />
+            Cloud Cosmetic Keys : 3x Keys
+          </p>
+          <p class="topup-harga">Harga: Rp 60.000</p>
+          <button class="topup-button">Beli</button>
         </div>
       </div>
-      
+    </div>
     <!-- Topup End -->
+
     <!-- Feedback Start -->
-     <div class="feedback">
-        <h2 class="title-feedback">Feedback</h2>
-        <div class="feedback-container">
-            <form action="#" method="post">
-                <label for="name">GamerTag:</label><br>
-                <input type="text" id="name" name="name" required><br>
-                <label for="feedback">Feedback:</label><br>
-                <textarea id="feedback" name="feedback" required></textarea><br>
-                <input type="submit" value="Kirim">
-            </form>
-        </div>
-     </div>
+    <div id="feedback" class="feedback">
+      <h2 class="title-feedback">Feedback</h2>
+      <div class="feedback-container">
+        <form action="#" method="post">
+          <label for="name">GamerTag:</label><br />
+          <input type="text" id="name" name="name" required /><br />
+          <label for="feedback">Feedback:</label><br />
+          <textarea id="feedback" name="feedback" required></textarea><br />
+          <input type="submit" value="Kirim" />
+        </form>
+      </div>
+    </div>
     <!-- Feedback End -->
 
     <!-- Footer Start -->
