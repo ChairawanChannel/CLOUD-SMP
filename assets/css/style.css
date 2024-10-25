@@ -388,6 +388,8 @@ body {
 }
 
 /* Ranks End */
+
+
 /* Topup Start */
 .topup {
   padding: 40px 20px;
@@ -460,6 +462,9 @@ body {
 }
 
 /* Topup End */
+
+
+
 /* Feedback Start */
 .feedback {
   padding: 40px 20px;
@@ -1125,6 +1130,7 @@ a {
       height: 300px; 
     }
 
+    
     .carousel-text {
       font-size: 1.2em; 
     }
