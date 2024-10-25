@@ -30,3 +30,42 @@ document.addEventListener('contextmenu', function(e) {
   e.preventDefault();
 
 });
+
+// smut scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+      e.preventDefault();
+
+     
+      const targetID = this.getAttribute("href");
+      const targetElement = document.querySelector(targetID);
+
+      if (targetElement) {
+    
+          targetElement.scrollIntoView({
+              behavior: "smooth",
+              block: "start"
+          });
+      }
+  });
+});
+
+
+//back to top
+const backToTopButton = document.getElementById("backToTop");
+
+window.onscroll = function() {
+  if (window.scrollY > 300) {
+    backToTopButton.style.display = "flex";
+  } else {
+    backToTopButton.style.display = "none";
+  }
+};
+
+// Smooth scroll ke atas saat tombol Back to Top diklik
+backToTopButton.addEventListener("click", function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
