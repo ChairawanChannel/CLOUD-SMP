@@ -4,20 +4,18 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Cloud</title>
+    <title>CLOUD SMP - Login</title>
   </head>
 
   <body>
     <div class="form-container">
-
-        
-    <form class="form" method="post" action="?">
-        <h1>LOGIN</h1>
+      <form class="form" method="post" action="?">
+        <h1 class="title-login">LOGIN</h1>
 
         <div class="flex-column">
           <label>Gamer Tag </label>
         </div>
-  
+
         <div class="inputForm">
           <svg
             height="20"
@@ -33,7 +31,7 @@
           </svg>
           <input type="text" class="input" placeholder="Enter your Gamer Tag" />
         </div>
-  
+
         <div class="flex-column">
           <label>Password </label>
         </div>
@@ -57,19 +55,19 @@
             placeholder="Enter your Password"
           />
         </div>
-  
+
         <div class="flex-row">
           <div>
-            <input type="checkbox"/>
+            <input type="checkbox" />
             <label>Remember me </label>
           </div>
-          <span class="span">Forgot password?</span>
+          <a href="#" class="btn-forgot-pw">Forgot password?</a>
         </div>
         <button class="button-submit">Sign In</button>
-        <p class="p">Don't have an account? <span class="signup">Sign Up</span></p>
+        <p class="detail-signup">
+          Jika Tidak memiliki akun,<span>silahkan ketik di server /pw</span>
+        </p>
       </form>
-
-</div>
-    
+    </div>
   </body>
 </html>

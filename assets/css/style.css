@@ -51,7 +51,7 @@ body {
 /* Styling untuk nav-link */
 .nav-link {
   text-decoration: none;
-  color: white;
+  color: #f3f3f3;
   font-size: 18px;
   transition: color 0.3s ease;
   position: relative;
@@ -145,7 +145,7 @@ body {
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
-  color: white;
+  color: #f3f3f3;
   border-radius: 10px;
   border: 0px;
   font-weight: 700;
@@ -386,7 +386,7 @@ body {
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto; /* Membuat animasi bergerak */
-  color: white;
+  color: #f3f3f3;
   display: block;
   border: 0px;
   width: 100%;
@@ -560,15 +560,13 @@ footer {
 
 /* Footer End */
 
-
-
 /* start form */
 
 .form-container {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  height: 100vh; 
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .form {
@@ -576,10 +574,10 @@ footer {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  background-color: #1f1f1f;
+  background-color: #18233a;
   padding: 35px;
   width: 450px;
-  
+
   border-radius: 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -640,82 +638,104 @@ footer {
   font-size: 14px;
   color: #f1f1f1;
   font-weight: 400;
-  text-align: center  ;
+  text-align: center;
 }
 
-a{
+a {
   text-decoration: none;
   cursor: pointer;
 }
-
-.span {
+.btn-forgot-pw {
   font-size: 14px;
   margin-left: 5px;
   color: #2d79f3;
   font-weight: 500;
-  cursor: pointer;
   padding-left: 135px;
 }
-
 .signup {
   font-size: 14px;
   margin-left: 5px;
   color: #2d79f3;
   font-weight: 500;
   cursor: pointer;
-
 }
 
 .button-submit {
-  margin: 20px 0 10px 0;
-  background-color: #f5a425;
-  border: none;
-  color: white;
-  font-size: 15px;
-  font-weight: 500;
-  border-radius: 10px;
-  height: 50px;
-  width: 100%;
-  cursor: pointer;
-  display:flex; 
-  justify-content: center; 
-  align-items: center; 
-}
-.p {
+  margin: 10px 0 0 0;
+  padding: 15px 20px;
+  border-radius: 5px;
   text-align: center;
-  color: #f1f1f1;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto; /* Membuat animasi bergerak */
+  color: #f3f3f3;
+  display: block;
+  border: 0px;
+  width: 100%;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px rgba(245, 164, 37, 0.75); /* Warna shadow dari gradient */
+  background-image: linear-gradient(
+    90deg,
+    rgba(245, 164, 37, 1) 0%,
+    rgba(202, 136, 29, 1) 50%,
+    rgba(245, 164, 37, 1) 100%
+  );
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.button-submit:hover {
+  background-position: right center; /* Mengubah arah gradien saat hover */
+  color: #f3f3f3;
+  text-decoration: none;
+}
+.detail-signup {
+  text-align: center;
+  color: #f3f3f3;
   font-size: 14px;
   margin: 5px 0;
 }
 
-.btn {
-  margin-top: 10px;
-  width: 100%;
-  height: 50px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center; 
-  align-items: center; /
-  font-weight: 500;
-  gap: 10px;
-  border: 1px solid #333;
-  background-color: #2b2b2b;
-  color: #f1f1f1;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
+.detail-signup span {
+  font-size: 14px;
+  margin-left: 5px;
+  color: #2d79f3;
 }
 
-.btn:hover {
-  border: 1px solid #2d79f3;
-}
-
-h1{
-  color: #f3f3f3; 
-  font-size: 34px; 
+.title-login {
+  color: #f3f3f3;
+  font-size: 34px;
   font-weight: bold;
   text-align: center;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /* end form */
 
-    
+/* Forgot Password Start */
+.alert {
+  background-color: #122b47;
+  border-left: 5px solid #006dff;
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.alert i {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.alert a {
+  color: #2d79f3;
+  text-decoration: none;
+}
+.alert a:hover {
+  text-decoration: underline;
+}
+.alert strong {
+  color: #00baff;
+}
+/* Forgot Passwqord End */
