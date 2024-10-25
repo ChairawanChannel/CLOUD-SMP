@@ -711,6 +711,8 @@ a {
 }
 /* end form */
 
+
+
 /* Forgot Password Start */
 .alert {
   background-color: #122b47;
@@ -735,7 +737,24 @@ a {
 .alert a:hover {
   text-decoration: underline;
 }
-.alert strong {
-  color: #00baff;
+
+.button-top:hover .svgIcon {
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
 }
-/* Forgot Passwqord End */
+
+.button-top::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top";
+  color: white;
+  font-size: 0px;
+}
+
+.button-top:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  transition-duration: 0.3s;
+}
+
