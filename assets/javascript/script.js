@@ -49,3 +49,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       }
   });
 });
+
+
+//back to top
+const backToTopButton = document.getElementById("backToTop");
+
+window.onscroll = function() {
+  if (window.scrollY > 300) {
+    backToTopButton.style.display = "flex";
+  } else {
+    backToTopButton.style.display = "none";
+  }
+};
+
+// Smooth scroll ke atas saat tombol Back to Top diklik
+backToTopButton.addEventListener("click", function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
