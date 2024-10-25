@@ -131,6 +131,56 @@ body {
   font-size: 0.5em;
   color: #eee;
 }
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Jarak antara tombol */
+}
+
+.join-button,
+.discord-button {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0px 0px 14px -7px rgba(245, 164, 37, 0.75);
+}
+
+.join-button {
+  background-image: linear-gradient(
+    90deg,
+    rgba(245, 164, 37, 1) 0%,
+    rgba(202, 136, 29, 1) 51%,
+    rgba(245, 164, 37, 1) 100%
+  );
+}
+
+.discord-button {
+  background-image: linear-gradient(
+    90deg,
+    rgba(114, 137, 218, 1) 0%,
+    rgba(78, 93, 148, 1) 51%,
+    rgba(114, 137, 218, 1) 100%
+  );
+  box-shadow: 0px 0px 14px -7px rgba(114, 137, 218, 0.75);
+}
+
+.join-button:hover,
+.discord-button:hover {
+  background-position: right center;
+}
+
+.join-button:active,
+.discord-button:active {
+  transform: scale(0.95);
+}
 
 .carousel-text {
   position: absolute;
@@ -195,6 +245,66 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
 }
 /* Carousel End */
+/* Mode Start */
+.mode-container {
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  margin: 40px auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.mode-header h2 {
+  font-size: 2.5em;
+  color: #f3f3f3;
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.mode-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.mode-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 200px;
+}
+
+.mode-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.mode-deskripsi {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #f3f3f3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Arial", sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mode-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mode-item {
+    width: 100%;
+  }
+}
+
+/* Mode End */
 /* About Start */
 .about {
   padding: 40px 20px;
@@ -269,18 +379,39 @@ body {
   line-height: 1.6;
 }
 .rank-button {
-  background-color: #f5a425;
-  color: #f3f3f3;
-  border: none;
-  width: 100%;
+  margin: 10px 0 0 0;
   padding: 10px 20px;
   border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto; /* Membuat animasi bergerak */
+  color: white;
+  display: block;
+  border: 0px;
+  width: 100%;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px rgba(245, 164, 37, 0.75); /* Warna shadow dari gradient */
+  background-image: linear-gradient(
+    90deg,
+    rgba(245, 164, 37, 1) 0%,
+    rgba(202, 136, 29, 1) 50%,
+    rgba(245, 164, 37, 1) 100%
+  );
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 .rank-button:hover {
-  background-color: #ca881d;
+  background-position: right center; /* Mengubah arah gradien saat hover */
+  color: #fff;
+  text-decoration: none;
+}
+
+.rank-button:active {
+  transform: scale(0.95); /* Efek animasi kecil saat tombol ditekan */
 }
 
 /* Ranks End */

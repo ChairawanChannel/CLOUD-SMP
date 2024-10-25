@@ -9,13 +9,19 @@
       href="https://fonts.cdnfonts.com/css/sf-pro-display"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
   <body>
     <!-- Navbar Start -->
     <nav class="navbar">
-      <div class="logo">CLOUD<span>SMP</span></div> <!-- Ini adalah tulisan "CLOUD SMP" -->
+      <div class="logo">CLOUD<span>SMP</span></div>
+      <!-- Ini adalah tulisan "CLOUD SMP" -->
       <div class="nav-links">
         <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
         <a href="#ranks" class="nav-link">Ranks</a>
         <a href="#topup" class="nav-link">Topup</a>
         <a href="#feedback" class="nav-link">Feedback</a>
@@ -28,7 +34,7 @@
         </div>
       </div>
     </nav>
-    
+
     <!-- Navbar End -->
 
     <!-- Carousel Start -->
@@ -36,7 +42,12 @@
       <div class="carousel-text">
         <h2>Welcome to Cloud SMP</h2>
         <p>Explore the server and enjoy your adventure</p>
-        <button class="btn-carousel">Join the Server</button>
+        <div class="button-container">
+          <button class="join-button">Join the Server</button>
+          <button class="discord-button">
+            <i class="fa-brands fa-discord"></i>
+          </button>
+        </div>
         <p class="player-join-carousel">Player Join 0</p>
       </div>
 
@@ -55,6 +66,31 @@
       <button class="next-btn" onclick="nextSlide()">&#10095;</button>
     </div>
     <!-- Carousel End -->
+    <!-- Mode Start -->
+    <div class="mode-container">
+      <div class="mode-header">
+        <h2>Mode Yang Bisa Dimainkan</h2>
+        <div class="mode-list">
+          <div class="mode-item">
+            <img
+              src="assets/image/icon/money-bag-svgrepo-com.svg"
+              alt=""
+              class="logo-survival-economy"
+            />
+            <p class="mode-deskripsi">Survival Economy</p>
+          </div>
+          <div class="mode-item">
+            <img
+              src="assets/image/icon/appartment-3-svgrepo-com.svg"
+              alt=""
+              class="logo-skyblock"
+            />
+            <p class="mode-deskripsi">Skyblock</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mode End -->
 
     <!-- About Start -->
     <div id="about" class="about">
