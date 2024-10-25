@@ -69,3 +69,17 @@ backToTopButton.addEventListener("click", function() {
     behavior: "smooth"
   });
 });
+
+
+// toggle dropdown
+function toggleDropdown() {
+  const dropdown = document.getElementById("profileDropdown");
+  dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+}
+
+// nutup dropdown kalau ngeklik di luar
+window.onclick = function(event) {
+  if (!event.target.closest(".profile")) {
+      document.getElementById("profileDropdown").style.display = "none";
+  }
+};
