@@ -719,7 +719,7 @@ h1{
 /* end form */
 
 /* back to top start*/
-.button {
+.button-top {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -748,7 +748,7 @@ h1{
   fill: white;
 }
 
-.button:hover {
+.button-top:hover {
   width: 140px;
   border-radius: 50px;
   transition-duration: 0.3s;
@@ -756,12 +756,12 @@ h1{
   align-items: center;
 }
 
-.button:hover .svgIcon {
+.button-top:hover .svgIcon {
   transition-duration: 0.3s;
   transform: translateY(-200%);
 }
 
-.button::before {
+.button-top::before {
   position: absolute;
   bottom: -20px;
   content: "Back to Top";
@@ -769,7 +769,7 @@ h1{
   font-size: 0px;
 }
 
-.button:hover::before {
+.button-top:hover::before {
   font-size: 13px;
   opacity: 1;
   bottom: unset;
