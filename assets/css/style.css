@@ -984,7 +984,7 @@ a {
 /* responsive start*/
 
 /* Media Query untuk Mobile */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .ranks {
     padding: 20px 10px; 
   }
