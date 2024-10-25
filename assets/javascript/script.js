@@ -25,3 +25,8 @@ setInterval(nextSlide, 3000); // Change slide every 3 seconds
 // Initialize the first slide as active
 showSlide(currentSlide);
 
+//turning off right click on page
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+
+});
