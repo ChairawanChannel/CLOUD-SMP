@@ -1,12 +1,12 @@
 let currentSlide = 0;
-const slides = document.querySelectorAll('.carousel-slide');
+const slides = document.querySelectorAll(".carousel-slide");
 const totalSlides = slides.length;
 
 function showSlide(index) {
   slides.forEach((slide) => {
-    slide.classList.remove('active');
+    slide.classList.remove("active");
   });
-  slides[index].classList.add('active');
+  slides[index].classList.add("active");
 }
 
 function nextSlide() {
@@ -26,35 +26,31 @@ setInterval(nextSlide, 3000); // Change slide every 3 seconds
 showSlide(currentSlide);
 
 //turning off right click on page
-document.addEventListener('contextmenu', function(e) {
+document.addEventListener("contextmenu", function (e) {
   e.preventDefault();
-
 });
 
 // smut scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
-      e.preventDefault();
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
 
-     
-      const targetID = this.getAttribute("href");
-      const targetElement = document.querySelector(targetID);
+    const targetID = this.getAttribute("href");
+    const targetElement = document.querySelector(targetID);
 
-      if (targetElement) {
-    
-          targetElement.scrollIntoView({
-              behavior: "smooth",
-              block: "start"
-          });
-      }
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
   });
 });
-
 
 //back to top
 const backToTopButton = document.getElementById("backToTop");
 
-window.onscroll = function() {
+window.onscroll = function () {
   if (window.scrollY > 300) {
     backToTopButton.style.display = "flex";
   } else {
@@ -63,13 +59,12 @@ window.onscroll = function() {
 };
 
 // Smooth scroll ke atas saat tombol Back to Top diklik
-backToTopButton.addEventListener("click", function() {
+backToTopButton.addEventListener("click", function () {
   window.scrollTo({
     top: 0,
-    behavior: "smooth"
+    behavior: "smooth",
   });
 });
-
 
 // toggle dropdown
 function toggleDropdown() {
@@ -78,8 +73,8 @@ function toggleDropdown() {
 }
 
 // nutup dropdown kalau ngeklik di luar
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (!event.target.closest(".profile")) {
-      document.getElementById("profileDropdown").style.display = "none";
+    document.getElementById("profileDropdown").style.display = "none";
   }
 };

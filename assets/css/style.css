@@ -856,7 +856,7 @@ a {
   --nav-button-padding-y: 0.375em;
   --nav-button-border-radius: 0.375em;
   --nav-button-font-size: 17px;
-  --nav-button-hover-bg: #E4E0E1;
+  --nav-button-hover-bg: #e4e0e1;
   --nav-button-hover-text-color: #000000;
   --nav-button-distance: 0.875em;
   /* underline */
@@ -864,7 +864,6 @@ a {
   --underline-border-color: #ccc;
   --underline-margin-y: 0.3125em;
 }
-
 
 .popup {
   display: inline-block;
@@ -910,7 +909,7 @@ a {
       var(--burger-enable-outline-offset)
   );
   right: var(--nav-position-left);
-  left: auto; 
+  left: auto;
   transition: var(--burger-transition);
   margin-top: 10px;
 }
@@ -965,7 +964,6 @@ a {
   border-bottom: var(--underline-border-width) solid
     var(--underline-border-color);
 }
-
 
 .popup-window ul button:hover,
 .popup-window ul button:focus-visible,
