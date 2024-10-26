@@ -1106,10 +1106,11 @@ a {
     justify-content: center;
     gap: 10px;
   }
-  .join-button,
+
+ .join-button,
   .discord-button {
-    margin: 5px;
-    padding: 10px 20px;
+    margin: 10px;
+    padding: 15px 30px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
@@ -1119,7 +1120,46 @@ a {
     border: 0px;
     font-weight: 700;
     cursor: pointer;
-    box-shadow: 0px 0px 10px -7px rgba(245, 164, 37, 0.75);
+    box-shadow: 0px 0px 14px -7px rgba(245, 164, 37, 0.75);
+  }
+
+  .vote-button{
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #f3f3f3;
+    border-radius: 10px;
+    border: 0px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 0px 14px -7px rgba(245, 164, 37, 0.75);
+  }
+  
+  .vote-button {
+    background-color: #608BC1;
+  }
+
+  .discord-button {
+    background-image: linear-gradient(
+      90deg,
+      rgba(114, 137, 218, 1) 0%,
+      rgba(78, 93, 148, 1) 51%,
+      rgba(114, 137, 218, 1) 100%
+    );
+    box-shadow: 0px 0px 14px -7px rgba(114, 137, 218, 0.75);
+  }
+  
+  .join-button:hover,
+  .discord-button:hover {
+    background-position: right center;
+  }
+  
+  .join-button:active,
+  .discord-button:active {
+    transform: scale(0.95);
   }
 
   /* Carousel Text */
@@ -1138,17 +1178,21 @@ a {
     margin-top: 5px;
   }
 
-
-
   /* Carousel Navigation Buttons */
   .prev-btn,
   .next-btn {
     display: none;
   }
+
 }
 
 /* Desktop View (min-width: 1010px) */
 @media (min-width: 1010px) {
+
+.vote-button{
+  display: none;
+}
+
   /* Mode Container */
   .mode-container {
     margin: 60px auto;
