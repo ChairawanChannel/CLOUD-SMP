@@ -990,6 +990,11 @@ a {
 
 /* Media Query untuk Mobile */
 @media (max-width: 768px) {
+
+  .nav-link{
+    display: none;
+  }
+
   .ranks {
     padding: 20px 10px; 
   }
@@ -1123,30 +1128,10 @@ a {
   .next-btn:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
+}
 
-  /* Media Query untuk Mobile */
-  @media (max-width: 768px) {
-    .carousel-container {
-      height: 300px; 
-    }
 
-    
-    .carousel-text {
-      font-size: 1.2em; 
-    }
+@media (max-width: 1500px) {
 
-    .carousel-text h2 {
-      font-size: 1.5em;
-    }
-
-    .btn-carousel {
-      font-size: 0.7em; 
-    }
-
-    .join-button,
-    .discord-button {
-      padding: 10px 15px;
-    }
-  }
 }
 /* responsive end */
