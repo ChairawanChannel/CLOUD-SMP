@@ -86,18 +86,13 @@ document.addEventListener("mousedown", (e) => e.preventDefault());
 document.addEventListener("touchstart", (e) => e.preventDefault());
 
 document.addEventListener("keydown", (e) => {
-    if (e.shiftKey && (e.key === "ArrowLeft" || e.key === "ArrowRight" || e.key === "ArrowUp" || e.key === "ArrowDown")) {
-        e.preventDefault();
-    }
+  if (
+    e.shiftKey &&
+    (e.key === "ArrowLeft" ||
+      e.key === "ArrowRight" ||
+      e.key === "ArrowUp" ||
+      e.key === "ArrowDown")
+  ) {
+    e.preventDefault();
+  }
 });
-
-//carousel review
-const carousel = document.querySelector('.carousel');
-
-function nextSlide() {
-  carousel.scrollBy({ left: 320, behavior: 'smooth' });
-}
-
-function prevSlide() {
-  carousel.scrollBy({ left: -320, behavior: 'smooth' });
-}
