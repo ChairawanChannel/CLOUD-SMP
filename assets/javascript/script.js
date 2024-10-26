@@ -90,3 +90,14 @@ document.addEventListener("keydown", (e) => {
         e.preventDefault();
     }
 });
+
+//carousel review
+const carousel = document.querySelector('.carousel');
+
+function nextSlide() {
+  carousel.scrollBy({ left: 320, behavior: 'smooth' });
+}
+
+function prevSlide() {
+  carousel.scrollBy({ left: -320, behavior: 'smooth' });
+}
