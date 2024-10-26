@@ -78,3 +78,15 @@ window.onclick = function (event) {
     document.getElementById("profileDropdown").style.display = "none";
   }
 };
+
+// matiin blocking text
+document.addEventListener("selectstart", (e) => e.preventDefault());
+
+document.addEventListener("mousedown", (e) => e.preventDefault());
+document.addEventListener("touchstart", (e) => e.preventDefault());
+
+document.addEventListener("keydown", (e) => {
+    if (e.shiftKey && (e.key === "ArrowLeft" || e.key === "ArrowRight" || e.key === "ArrowUp" || e.key === "ArrowDown")) {
+        e.preventDefault();
+    }
+});
