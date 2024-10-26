@@ -643,38 +643,18 @@ body {
 }
 
 .topup-button {
-  margin: 10px 0 0 0;
+  background-color: #f5a425;
+  color: #f3f3f3;
+  border: none;
+  width: 100%;
   padding: 10px 20px;
   border-radius: 5px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto; /* Membuat animasi bergerak */
-  color: #f3f3f3;
-  display: block;
-  border: 0px;
-  width: 100%;
-  font-weight: 700;
-  box-shadow: 0px 0px 14px -7px rgba(245, 164, 37, 0.75); /* Warna shadow dari gradient */
-  background-image: linear-gradient(
-    90deg,
-    rgba(245, 164, 37, 1) 0%,
-    rgba(202, 136, 29, 1) 50%,
-    rgba(245, 164, 37, 1) 100%
-  );
   cursor: pointer;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  transition: background-color 0.3s ease;
 }
 
 .topup-button:hover {
-  background-position: right center; /* Mengubah arah gradien saat hover */
-  color: #fff;
-  text-decoration: none;
-}
-.topup-button:active {
-  transform: scale(0.95);
+  background-color: #ca881d;
 }
 
 .topup-container-wrapper {
@@ -904,7 +884,7 @@ a {
 }
 .btn-forgot-pw {
   font-size: 14px;
-  margin-left: 5px;
+  margin-left: 157px;
   color: #2d79f3;
   font-weight: 500;
   padding-left: 135px;
@@ -946,18 +926,6 @@ a {
   background-position: right center; /* Mengubah arah gradien saat hover */
   color: #f3f3f3;
   text-decoration: none;
-}
-.detail-signup {
-  text-align: center;
-  color: #f3f3f3;
-  font-size: 14px;
-  margin: 5px 0;
-}
-
-.detail-signup span {
-  font-size: 14px;
-  margin-left: 5px;
-  color: #2d79f3;
 }
 
 .title-login {
@@ -1087,6 +1055,8 @@ a {
     transform: none;
   }
 
+ 
+
   /* Carousel Section */
   .carousel-container {
     position: relative;
@@ -1125,9 +1095,8 @@ a {
     gap: 10px;
   }
 
-  .join-button,
-  .discord-button,
-  .vote-button {
+ .join-button,
+  .discord-button {
     margin: 10px;
     padding: 15px 30px;
     text-align: center;
@@ -1142,14 +1111,25 @@ a {
     box-shadow: 0px 0px 14px -7px rgba(245, 164, 37, 0.75);
   }
 
+
+  /* vote */
+  .vote-button{
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #f3f3f3;
+    border-radius: 10px;
+    border: 0px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 0px 14px -7px rgba(245, 164, 37, 0.75);
+  }
+  
   .vote-button {
-    background-image: linear-gradient(
-      90deg,
-      rgb(16, 23, 46) 0%,
-      rgb(27, 35, 64) 51%,
-      rgb(62, 67, 86) 100%
-    );
-    box-shadow: 0px 0px 14px -7px rgba(14, 63, 71, 0.75);
+    background-color: #608BC1;
   }
 
   .discord-button {
@@ -1161,16 +1141,14 @@ a {
     );
     box-shadow: 0px 0px 14px -7px rgba(114, 137, 218, 0.75);
   }
-
+  
   .join-button:hover,
-  .discord-button:hover,
-  .vote-button:hover {
+  .discord-button:hover {
     background-position: right center;
   }
-
+  
   .join-button:active,
-  .discord-button:active,
-  .vote-button:active {
+  .discord-button:active {
     transform: scale(0.95);
   }
 
@@ -1195,13 +1173,21 @@ a {
   .next-btn {
     display: none;
   }
+
+  .form-container{
+      height: 100%;
+      width: 100%;
+  }
+
+
 }
 
 /* Desktop View (min-width: 1010px) */
 @media (min-width: 1010px) {
-  .vote-button {
-    display: none;
-  }
+
+.vote-button{
+  display: none;
+}
 
   /* Mode Container */
   .mode-container {
@@ -1259,12 +1245,6 @@ a {
   .button-top {
     width: 60px;
     height: 60px;
-  }
-}
-
-@media (min-width: 769px) {
-  .vote-button {
-    display: none;
   }
 }
 /* Responsive Styles End */
