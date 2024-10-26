@@ -539,8 +539,15 @@ body {
   border-radius: 10px;
   padding: 20px;
   width: 100%;
-  max-width: 200px;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Memposisikan konten ke tengah secara horizontal */
+  text-align: center; /* Memastikan teks juga berada di tengah */
+}
+.rank-box img {
+  width: 250px; /* Ukuran lebar gambar */
+  height: auto; /* Menyesuaikan tinggi agar proporsional */
+  justify-content: center;
 }
 
 .rank-name {
@@ -1055,8 +1062,6 @@ a {
     transform: none;
   }
 
- 
-
   /* Carousel Section */
   .carousel-container {
     position: relative;
@@ -1095,7 +1100,7 @@ a {
     gap: 10px;
   }
 
- .join-button,
+  .join-button,
   .discord-button {
     margin: 10px;
     padding: 15px 30px;
@@ -1111,9 +1116,8 @@ a {
     box-shadow: 0px 0px 14px -7px rgba(245, 164, 37, 0.75);
   }
 
-
   /* vote */
-  .vote-button{
+  .vote-button {
     margin: 10px;
     padding: 15px 30px;
     text-align: center;
@@ -1127,9 +1131,9 @@ a {
     cursor: pointer;
     box-shadow: 0px 0px 14px -7px rgba(245, 164, 37, 0.75);
   }
-  
+
   .vote-button {
-    background-color: #608BC1;
+    background-color: #608bc1;
   }
 
   .discord-button {
@@ -1141,12 +1145,12 @@ a {
     );
     box-shadow: 0px 0px 14px -7px rgba(114, 137, 218, 0.75);
   }
-  
+
   .join-button:hover,
   .discord-button:hover {
     background-position: right center;
   }
-  
+
   .join-button:active,
   .discord-button:active {
     transform: scale(0.95);
@@ -1174,20 +1178,17 @@ a {
     display: none;
   }
 
-  .form-container{
-      height: 100%;
-      width: 100%;
+  .form-container {
+    height: 100%;
+    width: 100%;
   }
-
-
 }
 
 /* Desktop View (min-width: 1010px) */
 @media (min-width: 1010px) {
-
-.vote-button{
-  display: none;
-}
+  .vote-button {
+    display: none;
+  }
 
   /* Mode Container */
   .mode-container {
