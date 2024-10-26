@@ -1067,8 +1067,6 @@ a {
     transform: none;
   }
 
- 
-
   /* Carousel Section */
   .carousel-container {
     position: relative;
@@ -1137,8 +1135,6 @@ a {
   .carousel-text p {
     margin-top: 5px;
   }
-
-
 
   /* Carousel Navigation Buttons */
   .prev-btn,
