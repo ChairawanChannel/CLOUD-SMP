@@ -993,7 +993,6 @@ a {
 .title-review {
   font-size: 2em;
   color: #f3f3f3;
-  margin-bottom: 10px;
   font-weight: bold;
 }
 
@@ -1002,7 +1001,6 @@ a {
   text-align: center;
   border-radius: 10px;
 }
-
 
 .carousel {
   display: flex;
@@ -1015,11 +1013,11 @@ a {
 }
 
 .carousel::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
 
 .card {
-  flex: 0 0 auto; 
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1033,9 +1031,8 @@ a {
 }
 
 .card:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
-
 
 .carousel-control {
   display: flex;
@@ -1056,12 +1053,11 @@ a {
   border-radius: 70%;
   font-size: 1.25rem;
   transition: background 0.3s;
-} 
+}
 
 .carousel-button:hover {
   background: rgba(7, 63, 216, 1);
 }
-
 
 .stars {
   display: flex;
@@ -1099,7 +1095,6 @@ a {
 }
 
 /* Review End */
-
 
 /* Responsive Styles Start */
 
