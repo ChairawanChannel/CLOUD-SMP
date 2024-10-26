@@ -1174,6 +1174,11 @@ a {
     width: 100%;
   }
 }
+@media (min-width: 769px) {
+  .vote-button {
+    display: none;
+  }
+}
 
 /* Desktop View (min-width: 1010px) */
 @media (min-width: 1010px) {
