@@ -643,18 +643,38 @@ body {
 }
 
 .topup-button {
-  background-color: #f5a425;
-  color: #f3f3f3;
-  border: none;
-  width: 100%;
+  margin: 10px 0 0 0;
   padding: 10px 20px;
   border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto; /* Membuat animasi bergerak */
+  color: #f3f3f3;
+  display: block;
+  border: 0px;
+  width: 100%;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px rgba(245, 164, 37, 0.75); /* Warna shadow dari gradient */
+  background-image: linear-gradient(
+    90deg,
+    rgba(245, 164, 37, 1) 0%,
+    rgba(202, 136, 29, 1) 50%,
+    rgba(245, 164, 37, 1) 100%
+  );
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 .topup-button:hover {
-  background-color: #ca881d;
+  background-position: right center; /* Mengubah arah gradien saat hover */
+  color: #fff;
+  text-decoration: none;
+}
+.topup-button:active {
+  transform: scale(0.95);
 }
 
 .topup-container-wrapper {
@@ -1105,41 +1125,31 @@ a {
     gap: 10px;
   }
 
- .join-button,
-  .discord-button {
-    margin: 10px;
-    padding: 15px 30px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: #f3f3f3;
-    border-radius: 10px;
-    border: 0px;
-    font-weight: 700;
-    cursor: pointer;
-    box-shadow: 0px 0px 14px -7px rgba(245, 164, 37, 0.75);
-  }
-
-
-  /* vote */
-  .vote-button{
-    margin: 10px;
-    padding: 15px 30px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: #f3f3f3;
-    border-radius: 10px;
-    border: 0px;
-    font-weight: 700;
-    cursor: pointer;
-    box-shadow: 0px 0px 14px -7px rgba(245, 164, 37, 0.75);
-  }
-  
+  .join-button,
+  .discord-button,
   .vote-button {
-    background-color: #608BC1;
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #f3f3f3;
+    border-radius: 10px;
+    border: 0px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 0px 14px -7px rgba(245, 164, 37, 0.75);
+  }
+
+  .vote-button {
+    background-image: linear-gradient(
+      90deg,
+      rgb(16, 23, 46) 0%,
+      rgb(27, 35, 64) 51%,
+      rgb(62, 67, 86) 100%
+    );
+    box-shadow: 0px 0px 14px -7px rgba(14, 63, 71, 0.75);
   }
 
   .discord-button {
@@ -1151,14 +1161,16 @@ a {
     );
     box-shadow: 0px 0px 14px -7px rgba(114, 137, 218, 0.75);
   }
-  
+
   .join-button:hover,
-  .discord-button:hover {
+  .discord-button:hover,
+  .vote-button:hover {
     background-position: right center;
   }
-  
+
   .join-button:active,
-  .discord-button:active {
+  .discord-button:active,
+  .vote-button:active {
     transform: scale(0.95);
   }
 
@@ -1183,15 +1195,13 @@ a {
   .next-btn {
     display: none;
   }
-
 }
 
 /* Desktop View (min-width: 1010px) */
 @media (min-width: 1010px) {
-
-.vote-button{
-  display: none;
-}
+  .vote-button {
+    display: none;
+  }
 
   /* Mode Container */
   .mode-container {
@@ -1249,6 +1259,12 @@ a {
   .button-top {
     width: 60px;
     height: 60px;
+  }
+}
+
+@media (min-width: 769px) {
+  .vote-button {
+    display: none;
   }
 }
 /* Responsive Styles End */
