@@ -519,7 +519,7 @@ body {
 .description-content-in-heading {
   font-size: 1em;
   color: #f3f3f3;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .rank-container {
   display: flex;
@@ -988,6 +988,15 @@ a {
 
 /* Review Start */
 /* Title Styling */
+.riview {
+  padding: 40px 20px;
+  text-align: center;
+}
+.title-review {
+  margin-bottom: 15px;
+  font-size: 2em;
+  color: #f3f3f3;
+}
 /* Carousel Review Container */
 .carousel-riview-container {
   display: flex;
@@ -995,7 +1004,7 @@ a {
   align-items: center;
   overflow: hidden;
   padding: 20px;
-  margin: 0 auto;
+  margin: 0 auto 0;
   max-width: 100%;
   user-select: none;
 }
@@ -1013,16 +1022,6 @@ a {
 .carousel-riview-card {
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  min-width: 250px; /* Lebar minimum setiap card */
-  max-width: 300px;
-  text-align: center;
-}
-
-/* Content Inside the Review Card */
-.isi-riview {
-  margin-bottom: 15px;
 }
 
 .date-time {
