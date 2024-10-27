@@ -987,59 +987,64 @@ a {
 /* Forgot Password.html End */
 
 /* Review Start */
-/* Title Styling */
-.riview {
-  padding: 40px 20px;
+.review {
   text-align: center;
 }
 .title-review {
-  margin-bottom: 15px;
   font-size: 2em;
+  margin-bottom: 10px;
   color: #f3f3f3;
 }
-/* Carousel Review Container */
-.carousel-riview-container {
-  display: flex;
-  justify-content: center; /* Memusatkan container di tengah */
-  align-items: center;
-  overflow: hidden;
+.comment-section {
+  max-width: 600px;
+  margin: 0 auto;
   padding: 20px;
-  margin: 0 auto 0;
-  max-width: 100%;
-  user-select: none;
 }
 
-/* Wrapper for the review cards */
-.carousel-riview-wrapper {
-  display: flex;
-  gap: 20px;
-  cursor: grab; /* Mengatur gaya cursor menjadi grab */
-}
-.carousel-riview-wrapper:active {
-  cursor: grabbing;
-}
-/* Review Card Styling */
-.carousel-riview-card {
+.comment-card {
   background-color: #ffffff;
   border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.date-time {
+.comment-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.username {
+  font-weight: bold;
+  margin: 0;
+}
+
+.timestamp {
+  color: #777;
   font-size: 0.9em;
-  color: #888;
 }
 
-.description {
-  font-size: 1em;
-  color: #333;
+.like-container {
+  display: flex;
+  align-items: center;
 }
 
-.author {
-  font-size: 0.9em;
-  font-style: italic;
-  color: #555;
+.like-icon {
+  font-size: 1.5em;
+  color: #0fb083;
+  margin-right: 5px;
+  cursor: pointer;
 }
 
+.like-count {
+  font-size: 1.1em;
+}
+
+.comment-body {
+  margin-top: 10px;
+  line-height: 1.6;
+}
 /* Review End */
 
 /* Responsive Styles Start */

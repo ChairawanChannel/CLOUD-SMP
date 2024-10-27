@@ -78,67 +78,20 @@ window.onclick = function (event) {
     document.getElementById("profileDropdown").style.display = "none";
   }
 };
+// Like button interaction
+document.querySelectorAll(".like-icon").forEach((icon) => {
+  icon.addEventListener("click", () => {
+    let count = icon.nextElementSibling;
+    let currentCount = parseInt(count.innerText);
 
-// carousel riview
-const carouselWrapper = document.querySelector(".carousel-riview-wrapper");
-let isDragging = false;
-let startPos = 0;
-let currentTranslate = 0;
-let prevTranslate = 0;
-
-// Duplikasi card di dalam carousel untuk membuat efek infinite
-function duplicateCards() {
-  const cards = Array.from(document.querySelectorAll(".carousel-riview-card"));
-  cards.forEach((card) => {
-    carouselWrapper.appendChild(card.cloneNode(true)); // Clone ke bagian akhir
+    if (icon.innerText === "❤️") {
+      icon.innerText = "🤍";
+      count.innerText = currentCount - 1;
+    } else {
+      icon.innerText = "❤️";
+      count.innerText = currentCount + 1;
+    }
   });
-}
-
-// Panggil fungsi untuk menduplikasi card
-duplicateCards();
-
-// Start dragging
-carouselWrapper.addEventListener("mousedown", (e) => {
-  isDragging = true;
-  startPos = e.clientX;
-  carouselWrapper.classList.add("active"); // Show grabbing cursor
-});
-
-// Stop dragging
-carouselWrapper.addEventListener("mouseup", () => {
-  isDragging = false;
-  carouselWrapper.classList.remove("active"); // Restore grab cursor
-  prevTranslate = currentTranslate;
-});
-
-// Cancel dragging if mouse leaves
-carouselWrapper.addEventListener("mouseleave", () => {
-  isDragging = false;
-  carouselWrapper.classList.remove("active");
-  prevTranslate = currentTranslate;
-});
-
-// Move carousel while dragging
-carouselWrapper.addEventListener("mousemove", (e) => {
-  if (!isDragging) return;
-  const currentPos = e.clientX;
-  const movement = currentPos - startPos;
-  currentTranslate = prevTranslate + movement;
-  carouselWrapper.style.transform = `translateX(${currentTranslate}px)`;
-
-  // Infinite scroll effect
-  const totalWidth = carouselWrapper.scrollWidth / 2; // Setengah dari total wrapper yang digandakan
-  if (currentTranslate < -totalWidth) {
-    currentTranslate = 0;
-    prevTranslate = 0;
-    carouselWrapper.style.transition = "none";
-    carouselWrapper.style.transform = `translateX(${currentTranslate}px)`;
-  } else if (currentTranslate > 0) {
-    currentTranslate = -totalWidth;
-    prevTranslate = currentTranslate;
-    carouselWrapper.style.transition = "none";
-    carouselWrapper.style.transform = `translateX(${currentTranslate}px)`;
-  }
 });
 
 // player count in server
