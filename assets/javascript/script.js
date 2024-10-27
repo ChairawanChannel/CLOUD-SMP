@@ -96,3 +96,31 @@ document.addEventListener("keydown", (e) => {
     e.preventDefault();
   }
 });
+
+// player count in server
+async function fetchPlayerCount() {
+  try {
+    // URL endpoint dengan IP server Minecraft kamu
+    const response = await fetch(
+      "https://api.mcsrvstat.us/2/sh1.nexuscloud.shop:19133"
+    );
+    const data = await response.json();
+
+    // Mengecek apakah server online dan menampilkan jumlah player
+    if (data.online) {
+      document.getElementById(
+        "playerCount"
+      ).innerText = `Player Join: ${data.players.online}`;
+    } else {
+      document.getElementById("playerCount").innerText =
+        "Server sedang offline";
+    }
+  } catch (error) {
+    console.error("Gagal mengambil data dari server", error);
+    document.getElementById("playerCount").innerText =
+      "Gagal mengambil data server";
+  }
+}
+
+// Panggil fungsi fetchPlayerCount saat halaman dimuat
+window.onload = fetchPlayerCount;
