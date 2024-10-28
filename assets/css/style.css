@@ -744,6 +744,13 @@ footer {
 
 /* Footer End */
 
+.detail-signup{
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+}
+
 /* back to top start */
 .button-top {
   width: 50px;
