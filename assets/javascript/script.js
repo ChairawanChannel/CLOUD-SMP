@@ -99,7 +99,7 @@ async function fetchPlayerCount() {
   try {
     // URL endpoint dengan IP server Minecraft kamu
     const response = await fetch(
-      "https://api.mcsrvstat.us/2/sh1.nexuscloud.shop:19133"
+      "https://api.mcsrvstat.us/3/sh1.nexuscloud.shop:19133"
     );
     const data = await response.json();
 
