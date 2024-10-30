@@ -304,14 +304,24 @@ body {
 .btn-carousel:hover {
   background-color: #ca881d;
 }
+
 .player-join-carousel {
+  text-transform: uppercase;
   font-size: 0.5em;
   color: #eee;
+  background-color: #BFECFF;
+  color: #1A1A19;
+  border: none;
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 0.5em;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .button-container {
   display: flex;
-  justify-content: center;
-  gap: 15px; /* Jarak antara tombol */
+  justify-content: center; 
 }
 
 .join-button,
@@ -394,6 +404,7 @@ body {
   filter: blur(2px);
   width: 100%;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .prev-btn,
@@ -1054,10 +1065,12 @@ a {
 }
 /* Review End */
 
+
 /* Responsive Styles Start */
 
-/* Mobile View (max-width: 768px) */
-@media (max-width: 768px) {
+
+/* Mobile View (max-width: 576px) */
+@media (max-width: 576px) {
   /* Hide navigation links on small screens */
   .nav-link {
     display: none;
@@ -1130,14 +1143,16 @@ a {
 
   /* Carousel Section */
   .carousel-container {
-    position: relative;
-    width: 100%;
-    height: 400px;
+    position:relative;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
+
 
   /* Carousel Buttons */
   .btn-carousel {
@@ -1155,8 +1170,7 @@ a {
 
   /* Player Join Text */
   .player-join-carousel {
-    font-size: 0.8em;
-    color: #eee;
+    color:#1A1A19 ;
   }
 
   /* Button Container and Styles */
@@ -1241,28 +1255,195 @@ a {
   }
 }
 
-/* Riview Start */
-.carousel-riview-container {
-  width: 95%; /* Full width with padding */
-  padding: 15px; /* Smaller padding for mobile */
+/* Tablet View (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Hide navigation links on small screens */
+  .nav-link {
+    display: none;
+  }
+
+  /* About Section */
+  .title-about {
+    font-size: 1.5em;
+  }
+  .detail-about {
+    font-size: 0.9em;
+    text-align: justify;
+  }
+
+  /* Mode Header */
+  .mode-header h2 {
+    font-size: 1.5em;
+    color: #f3f3f3;
+    margin-bottom: 20px;
+    font-family: "Arial", sans-serif;
+  }
+
+  /* Ranks Section */
+  .ranks {
+    padding: 20px 10px;
+  }
+  .mode-deskripsi,
+  .rank-description {
+    font-size: 0.9em;
+  }
+  .title-ranks {
+    font-size: 1.5em;
+  }
+  .rank-harga {
+    font-size: 1em;
+  }
+  .rank-name {
+    font-size: 1.2em;
+  }
+
+  /* Rank Container and Boxes */
+  .rank-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 18px;
+    width: 100%;
+  }
+  .rank-box {
+    max-width: 95%;
+    padding: 20px;
+    gap: 20px;
+    margin-left: 0 auto;
+    transition: none;
+  }
+  .rank-box:hover {
+    transform: none;
+  }
+
+  /* Topup and Feedback Containers */
+  .topup-container,
+  .feedback-container {
+    max-width: 95%;
+    padding: 20px;
+    margin-left: 0 auto;
+    transition: none;
+  }
+  .topup-container:hover {
+    transform: none;
+  }
+
+  /* Carousel Section */
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-slide{
+    height: fit-content;
+  }
+
+  /* Carousel Buttons */
+  .btn-carousel {
+    background-color: #f5a425;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 2em;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  /* Player Join Text */
+  .player-join-carousel {
+    color:#1A1A19;
+  }
+
+  /* Button Container and Styles */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .join-button,
+  .discord-button,
+  .vote-button {
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #f3f3f3;
+    border-radius: 10px;
+    border: 0px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 0px 14px -7px rgba(245, 164, 37, 0.75);
+  }
+  .vote-button {
+    background-image: linear-gradient(
+      90deg,
+      rgb(10, 12, 55) 0%,
+      rgb(14, 20, 42) 51%,
+      rgb(50, 40, 68) 100%
+    );
+  }
+
+  .discord-button {
+    background-image: linear-gradient(
+      90deg,
+      rgba(114, 137, 218, 1) 0%,
+      rgba(78, 93, 148, 1) 51%,
+      rgba(114, 137, 218, 1) 100%
+    );
+    box-shadow: 0px 0px 14px -7px rgba(114, 137, 218, 0.75);
+  }
+
+  .join-button:hover,
+  .discord-button:hover,
+  .vote-button:hover {
+    background-position: right center;
+  }
+
+  .join-button:active,
+  .discord-button:active,
+  .vote-button:active {
+    transform: scale(0.95);
+  }
+
+  /* Carousel Text */
+  .carousel-text {
+    position: absolute;
+    z-index: 2;
+    color: #eee;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .carousel-text h2 {
+    margin: 0;
+    font-size: 2em;
+  }
+  .carousel-text p {
+    margin-top: 5px;
+  }
+
+  /* Carousel Navigation Buttons */
+  .prev-btn,
+  .next-btn {
+    display: none;
+  }
+
+  .form-container {
+    height: 100%;
+    width: 100%;
+  }
 }
 
-.carousel-riview-card {
-  min-width: 200px; /* Smaller card width on mobile */
-  max-width: 250px;
-  margin: 5px; /* Less margin between cards */
-  padding: 10px; /* Less padding inside cards */
-}
 
-.description {
-  font-size: 0.9em; /* Smaller font for descriptions */
-}
-
-.date-time,
-.author {
-  font-size: 0.8em; /* Smaller text for date and author */
-}
-/* Riview End */
 @media (min-width: 769px) {
   .vote-button {
     display: none;

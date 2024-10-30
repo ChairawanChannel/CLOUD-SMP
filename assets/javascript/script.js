@@ -30,6 +30,12 @@ document.addEventListener("contextmenu", function (e) {
   e.preventDefault();
 });
 
+//turning off selecting text
+document.addEventListener('selectstart', function(e) {
+  e.preventDefault();
+});
+
+
 // smut scroll
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
@@ -107,10 +113,10 @@ async function fetchPlayerCount() {
     if (data.online) {
       document.getElementById(
         "playerCount"
-      ).innerText = `Player Join: ${data.players.online}`;
+      ).innerText = `ONLINE PLAYER: ${data.players.online}`;
     } else {
       document.getElementById("playerCount").innerText =
-        "Server sedang offline";
+        "Server Status: OFFLINE";
     }
   } catch (error) {
     console.error("Gagal mengambil data dari server", error);
