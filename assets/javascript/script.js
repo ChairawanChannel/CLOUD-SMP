@@ -30,6 +30,12 @@ document.addEventListener("contextmenu", function (e) {
   e.preventDefault();
 });
 
+//turning off selecting text
+document.addEventListener('selectstart', function(e) {
+  e.preventDefault();
+});
+
+
 // smut scroll
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
