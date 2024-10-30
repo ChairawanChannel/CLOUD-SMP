@@ -107,10 +107,10 @@ async function fetchPlayerCount() {
     if (data.online) {
       document.getElementById(
         "playerCount"
-      ).innerText = `Player Join: ${data.players.online}`;
+      ).innerText = `ONLINE PLAYER: ${data.players.online}`;
     } else {
       document.getElementById("playerCount").innerText =
-        "Server sedang offline";
+        "Server Status: OFFLINE";
     }
   } catch (error) {
     console.error("Gagal mengambil data dari server", error);
