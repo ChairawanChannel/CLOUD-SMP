@@ -304,9 +304,20 @@ body {
 .btn-carousel:hover {
   background-color: #ca881d;
 }
+
 .player-join-carousel {
+  text-transform: uppercase;
   font-size: 0.5em;
   color: #eee;
+  background-color: #BFECFF;
+  color: #1A1A19;
+  border: none;
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 0.5em;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .button-container {
   display: flex;
@@ -1159,8 +1170,7 @@ a {
 
   /* Player Join Text */
   .player-join-carousel {
-    font-size: 0.8em;
-    color: #eee;
+    color:#1A1A19 ;
   }
 
   /* Button Container and Styles */
