@@ -309,8 +309,8 @@ body {
   text-transform: uppercase;
   font-size: 0.5em;
   color: #eee;
-  background-color: #BFECFF;
-  color: #1A1A19;
+  background-color: #bfecff;
+  color: #1a1a19;
   border: none;
   margin: 10px;
   padding: 15px 30px;
@@ -321,7 +321,7 @@ body {
 }
 .button-container {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .join-button,
@@ -755,7 +755,7 @@ footer {
 
 /* Footer End */
 
-.detail-signup{
+.detail-signup {
   color: white;
   font-weight: bold;
   text-align: center;
@@ -820,144 +820,106 @@ footer {
   transition-duration: 0.3s;
 }
 
-/* Login.html */
-
-.form-container {
+/* Login.html Start */
+.login-page {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh; /* Full viewport height */
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  background-color: #18233a;
-  padding: 35px;
-  width: 450px;
-
-  border-radius: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-::placeholder {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #aaa;
-}
-
-.form button {
-  align-self: flex-end;
-}
-
-.flex-column > label {
-  color: #f1f1f1;
-  font-weight: 600;
-}
-
-.inputForm {
-  border: 1.5px solid #333;
-  border-radius: 10px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-  transition: 0.2s ease-in-out;
-  background-color: #2b2b2b;
-}
-
-.input {
-  margin-left: 10px;
-  border-radius: 10px;
-  border: none;
+/* Existing .login-container styles */
+.login-container {
   width: 100%;
-  height: 100%;
-  background-color: #2b2b2b;
-  color: #f1f1f1;
-}
-.input:focus {
-  outline: none;
-}
-
-.inputForm:focus-within {
-  border: 1.5px solid #2d79f3;
+  max-width: 400px;
+  padding: 2rem;
+  background: #18233a;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-  justify-content: flex-start;
-}
-
-.flex-row > div > label {
-  font-size: 14px;
-  color: #f1f1f1;
-  font-weight: 400;
+/* Title */
+.login-container h2 {
   text-align: center;
+  margin-bottom: 2rem;
+  color: #f3f3f3;
+}
+/* Label Styles */
+.login-container label {
+  color: #f3f3f3;
+  text-align: left;
+  font-size: 1.1em;
 }
 
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-.btn-forgot-pw {
-  font-size: 14px;
-  margin-left: 157px;
-  color: #2d79f3;
-  font-weight: 500;
-  padding-left: 80px;
-}
-.signup {
-  font-size: 14px;
-  margin-left: 5px;
-  color: #2d79f3;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.button-submit {
-  margin: 10px 0 0 0;
-  padding: 15px 20px;
+/* Input Styles */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
   border-radius: 5px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto; /* Membuat animasi bergerak */
-  color: #f3f3f3;
-  display: block;
-  border: 0px;
-  width: 100%;
-  font-weight: 700;
-  box-shadow: 0px 0px 14px -7px rgba(245, 164, 37, 0.75); /* Warna shadow dari gradient */
-  background-image: linear-gradient(
-    90deg,
-    rgba(245, 164, 37, 1) 0%,
-    rgba(202, 136, 29, 1) 50%,
-    rgba(245, 164, 37, 1) 100%
-  );
-  cursor: pointer;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  font-size: 1rem;
 }
-.button-submit:hover {
-  background-position: right center; /* Mengubah arah gradien saat hover */
-  color: #f3f3f3;
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+  outline: none;
+  border-color: #5471d2;
+  box-shadow: 0 0 5px rgba(84, 113, 210, 0.3);
+}
+
+/* Button Styling */
+.login-container button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #5471d2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+  background: #4056a1;
+}
+
+/* Button Styles */
+.login-container button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #5471d2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+  background: #4056a1;
+}
+
+/* Footer Links */
+.login-container .footer-text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.login-container .footer-text a {
+  color: #5471d2;
   text-decoration: none;
 }
 
-.title-login {
-  color: #f3f3f3;
-  font-size: 34px;
-  font-weight: bold;
-  text-align: center;
+.login-container .footer-text a:hover {
+  text-decoration: underline;
 }
 
+/* Login.html end */
 /* Forgot Password.html Start */
 .alert {
   background-color: #122b47;
@@ -1065,9 +1027,7 @@ a {
 }
 /* Review End */
 
-
 /* Responsive Styles Start */
-
 
 /* Mobile View (max-width: 576px) */
 @media (max-width: 576px) {
@@ -1143,16 +1103,14 @@ a {
 
   /* Carousel Section */
   .carousel-container {
-    position:relative;
+    position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
-
 
   /* Carousel Buttons */
   .btn-carousel {
@@ -1170,7 +1128,7 @@ a {
 
   /* Player Join Text */
   .player-join-carousel {
-    color:#1A1A19 ;
+    color: #1a1a19;
   }
 
   /* Button Container and Styles */
@@ -1338,7 +1296,7 @@ a {
     align-items: center;
   }
 
-  .carousel-slide{
+  .carousel-slide {
     height: fit-content;
   }
 
@@ -1358,7 +1316,7 @@ a {
 
   /* Player Join Text */
   .player-join-carousel {
-    color:#1A1A19;
+    color: #1a1a19;
   }
 
   /* Button Container and Styles */
@@ -1441,8 +1399,11 @@ a {
     height: 100%;
     width: 100%;
   }
+  /* Login.html */
+  .login-container {
+    padding: 1.5rem;
+  }
 }
-
 
 @media (min-width: 769px) {
   .vote-button {
