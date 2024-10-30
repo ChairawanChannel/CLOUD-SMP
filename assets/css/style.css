@@ -392,7 +392,6 @@ body {
 .carousel-slide img {
   filter: blur(2px);
   width: 100%;
-  height: auto;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -1057,6 +1056,8 @@ a {
 
 
 /* Responsive Styles Start */
+
+
 /* Mobile View (max-width: 576px) */
 @media (max-width: 576px) {
   /* Hide navigation links on small screens */
@@ -1434,8 +1435,6 @@ a {
 }
 
 
-
-/* Riview End */
 @media (min-width: 769px) {
   .vote-button {
     display: none;
