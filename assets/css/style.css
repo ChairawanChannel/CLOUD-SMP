@@ -1056,8 +1056,8 @@ a {
 
 /* Responsive Styles Start */
 
-/* Mobile View (max-width: 768px) */
-@media (max-width: 768px) {
+/* Mobile View (max-width: 576px) */
+@media (max-width: 576px) {
   /* Hide navigation links on small screens */
   .nav-link {
     display: none;
@@ -1137,6 +1137,10 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .carousel-slide{
+    height: fit-content;
   }
 
   /* Carousel Buttons */
