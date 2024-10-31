@@ -130,20 +130,27 @@ document.addEventListener("DOMContentLoaded", () => {
   const alertBox = document.querySelector(".alert");
   const closeBtn = document.querySelector(".close-btn");
 
-  // Fungsi untuk menyembunyikan alert
+  // Fungsi untuk menampilkan notifikasi
+  const showAlert = () => {
+    alertBox.classList.remove("hide");
+    alertBox.classList.add("show");
+  };
+
+  // Fungsi untuk menyembunyikan notifikasi
   const hideAlert = () => {
     alertBox.classList.remove("show");
     alertBox.classList.add("hide");
   };
 
-  // Tampilkan alert di awal
-  alertBox.classList.add("show");
+  // Set interval untuk menampilkan notifikasi setiap 1 menit (60000 ms)
+  setInterval(() => {
+    showAlert();
+    // Sembunyikan notifikasi setelah 5 detik
+    setTimeout(hideAlert, 5000);
+  }, 60000);
 
-  // Tutup alert saat tombol 'close' diklik
+  // Tutup notifikasi saat tombol 'close' diklik
   closeBtn.addEventListener("click", hideAlert);
-
-  // Sembunyikan otomatis setelah 5 detik
-  setTimeout(hideAlert, 5000);
 });
 
 // Notification End
