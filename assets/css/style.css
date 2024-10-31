@@ -288,10 +288,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-.onlinetxt{
+.onlinetxt {
   margin-top: 50px;
 }
 
@@ -1357,9 +1356,7 @@ footer {
   }
 
   .carousel-slide {
-    height: fit-content;
-    margin-bottom: 30px;
-    width: 650px;
+    width: max-content;
   }
 
   /* Carousel Buttons */
