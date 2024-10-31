@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php>
+<php lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,25 +15,25 @@
     <!-- Navbar Start -->
     <nav class="navbar">
       <div class="logo">
-        <a href="index.html" style="text-decoration: none">
+        <a href="index.php" style="text-decoration: none">
           CLOUD<span>SMP</span></a
         >
       </div>
       <!-- Navigation Links -->
       <div class="nav-links">
-        <a href="index.html" class="nav-link"
+        <a href="index.php#home" class="nav-link"
           ><i class="fa fa-home" aria-hidden="true"></i> Home</a
         >
-        <a href="index.html#about" class="nav-link"
+        <a href="index.php#about" class="nav-link"
           ><i class="fas fa-book-open"></i> About</a
         >
-        <a href="index.html#ranks" class="nav-link"
+        <a href="index.php#ranks" class="nav-link"
           ><i class="fa-solid fa-coins"></i> Ranks</a
         >
-        <a href="#topup" class="nav-link"
+        <a href="index.php#topup" class="nav-link"
           ><i class="fa-solid fa-circle-dollar-to-slot"></i> Topup</a
         >
-        <a href="feedback.html" class="nav-link"
+        <a href="feedback.php" class="nav-link"
           ><i class="fa-solid fa-comments"></i> Feedback</a
         >
         <a href="#" class="nav-link"
@@ -77,7 +77,7 @@
                       d="M19 4v6.406l-3.753 3.741-6.463-6.462 3.7-3.685h6.516zm2-2h-12.388l1.497 1.5-4.171 4.167 9.291 9.291 4.161-4.193 1.61 1.623v-12.388zm-5 4c.552 0 1 .449 1 1s-.448 1-1 1-1-.449-1-1 .448-1 1-1zm0-1c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm6.708.292l-.708.708v3.097l2-2.065-1.292-1.74zm-12.675 9.294l-1.414 1.414h-2.619v2h-2v2h-2v-2.17l5.636-5.626-1.417-1.407-6.219 6.203v5h6v-2h2v-2h2l1.729-1.729-1.696-1.685z"
                     ></path>
                   </svg>
-                  <a href="login.html" style="text-decoration: none">LOGIN</a>
+                  <a href="login.php" style="text-decoration: none">LOGIN</a>
                 </button>
               </li>
             </ul>
@@ -117,4 +117,4 @@
     </div>
     <!-- Feedback End -->
   </body>
-</html>
+</php>

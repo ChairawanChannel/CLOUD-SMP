@@ -31,10 +31,9 @@ document.addEventListener("contextmenu", function (e) {
 });
 
 //turning off selecting text
-document.addEventListener('selectstart', function(e) {
+document.addEventListener("selectstart", function (e) {
   e.preventDefault();
 });
-
 
 // smut scroll
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -104,9 +103,7 @@ document.querySelectorAll(".like-icon").forEach((icon) => {
 async function fetchPlayerCount() {
   try {
     // URL endpoint dengan IP server Minecraft kamu
-    const response = await fetch(
-      "https://api.mcsrvstat.us/3/sh1.nexuscloud.shop:19133"
-    );
+    const response = await fetch("https://api.mcsrvstat.us/3/192.168.137.1");
     const data = await response.json();
 
     // Mengecek apakah server online dan menampilkan jumlah player
@@ -127,3 +124,26 @@ async function fetchPlayerCount() {
 
 // Panggil fungsi fetchPlayerCount saat halaman dimuat
 window.onload = fetchPlayerCount;
+
+// Notification Start
+document.addEventListener("DOMContentLoaded", () => {
+  const alertBox = document.querySelector(".alert");
+  const closeBtn = document.querySelector(".close-btn");
+
+  // Fungsi untuk menyembunyikan alert
+  const hideAlert = () => {
+    alertBox.classList.remove("show");
+    alertBox.classList.add("hide");
+  };
+
+  // Tampilkan alert di awal
+  alertBox.classList.add("show");
+
+  // Tutup alert saat tombol 'close' diklik
+  closeBtn.addEventListener("click", hideAlert);
+
+  // Sembunyikan otomatis setelah 5 detik
+  setTimeout(hideAlert, 5000);
+});
+
+// Notification End

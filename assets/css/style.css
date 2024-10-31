@@ -283,7 +283,7 @@ body {
 .carousel-container {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 620px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -898,6 +898,14 @@ footer {
 }
 
 /* Title */
+.login-container h1 {
+  text-align: center;
+  margin-bottom: 0.9rem;
+  color: #f3f3f3;
+}
+.login-container span {
+  color: #f5a425;
+}
 .login-container h2 {
   text-align: center;
   margin-bottom: 2rem;
@@ -979,51 +987,69 @@ footer {
 }
 
 /* Login.html end */
-/* Forgot Password.html Start */
+/* Notification Start */
+/* Mengatur tampilan alert */
 .alert {
-  background-color: #122b47;
-  border-left: 5px solid #006dff;
-  color: #ffffff;
-  padding: 15px 20px;
-  border-radius: 5px;
-  font-size: 16px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  background-color: #ffeb3b;
+  color: #333;
+  padding: 16px;
+  border-radius: 8px;
+  font-family: "SF Pro Display", sans-serif;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 320px;
+  z-index: 1000;
+  transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 .alert i {
+  margin-right: 10px;
   font-size: 20px;
-  margin-right: 15px;
+  color: #f57c00;
+}
+
+.alert strong {
+  font-weight: bold;
 }
 
 .alert a {
-  color: #2d79f3;
-  text-decoration: none;
-}
-.alert a:hover {
+  color: #007bff;
   text-decoration: underline;
 }
 
-.button-top:hover .svgIcon {
-  transition-duration: 0.3s;
-  transform: translateY(-200%);
+.alert a:hover {
+  color: #0056b3;
 }
 
-.button-top::before {
-  position: absolute;
-  bottom: -20px;
-  content: "Back to Top";
-  color: white;
-  font-size: 0px;
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
 }
 
-.button-top:hover::before {
-  font-size: 13px;
+.close-btn:hover {
+  color: #555;
+}
+
+/* Animasi untuk menampilkan dan menghilangkan notifikasi */
+.alert.show {
+  transform: translateX(0);
   opacity: 1;
-  bottom: unset;
-  transition-duration: 0.3s;
 }
-/* Forgot Password.html End */
+
+.alert.hide {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+/* Notification End */
 
 /* Review Start */
 .review {
@@ -1041,7 +1067,7 @@ footer {
 }
 
 .comment-card {
-  background-color: #ffffff;
+  background-color: #18233a;
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 20px;
@@ -1055,12 +1081,13 @@ footer {
 }
 
 .username {
+  color: #f5a425;
   font-weight: bold;
   margin: 0;
 }
 
 .timestamp {
-  color: #777;
+  color: #808080;
   font-size: 0.9em;
 }
 
@@ -1068,19 +1095,8 @@ footer {
   display: flex;
   align-items: center;
 }
-
-.like-icon {
-  font-size: 1.5em;
-  color: #0fb083;
-  margin-right: 5px;
-  cursor: pointer;
-}
-
-.like-count {
-  font-size: 1.1em;
-}
-
 .comment-body {
+  color: #f3f3f3;
   margin-top: 10px;
   line-height: 1.6;
 }
@@ -1461,6 +1477,12 @@ footer {
   /* Login.html */
   .login-container {
     padding: 1.5rem;
+  }
+
+  .login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
