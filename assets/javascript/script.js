@@ -116,7 +116,7 @@ async function fetchPlayerCount() {
       ).innerText = `ONLINE PLAYER: ${data.players.online}`;
     } else {
       document.getElementById("playerCount").innerText =
-        "Server Status: OFFLINE";
+        "SERVER STATUS: OFFLINE";
     }
   } catch (error) {
     console.error("Gagal mengambil data dari server", error);

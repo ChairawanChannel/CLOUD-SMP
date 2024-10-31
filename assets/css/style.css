@@ -288,7 +288,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
+
+.onlinetxt{
+  margin-top: 50px;
+}
+
 .btn-carousel {
   background-color: #f5a425;
   color: #fff;
