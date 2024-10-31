@@ -407,6 +407,19 @@ body {
   object-fit: cover;
 }
 
+.welcome{
+  text-transform: uppercase;
+  color: #E9EED9;
+}
+
+a:visited {
+  color: #f3f3f3;
+}
+
+a:link {
+    color: #f3f3f3; /* warna untuk link yang belum dikunjungi */
+}
+
 .prev-btn,
 .next-btn {
   position: absolute;
