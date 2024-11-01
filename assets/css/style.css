@@ -590,6 +590,7 @@ a:link {
   line-height: 1.6;
 }
 .rank-button {
+  text-decoration: none;
   margin: 10px 0 0 0;
   padding: 10px 20px;
   border-radius: 5px;
@@ -616,6 +617,7 @@ a:link {
 }
 
 .rank-button:hover {
+  text-decoration: none;
   background-position: right center; /* Mengubah arah gradien saat hover */
   color: #fff;
   text-decoration: none;
@@ -677,6 +679,7 @@ a:link {
 }
 
 .topup-button {
+  text-decoration: none;
   margin: 10px 0 0 0;
   padding: 10px 20px;
   border-radius: 5px;
@@ -1126,6 +1129,8 @@ footer {
 
 /* Tombol Vote */
 .vote-button-form {
+  text-decoration: none;
+  margin-top: 10px;
   padding: 15px 30px;
   font-size: 1.1em;
   color: #fff;
@@ -1138,6 +1143,19 @@ footer {
 
 .vote-button-form:hover {
   background-color: #45a049;
+}
+/* Tombol login-form */
+.login-button-form {
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 /* Pesan Login Prompt */
@@ -1276,6 +1294,7 @@ footer {
     box-shadow: 0px 0px 14px -7px rgba(245, 164, 37, 0.75);
   }
   .vote-button {
+    text-decoration: none;
     background-image: linear-gradient(
       90deg,
       rgb(10, 12, 55) 0%,
@@ -1482,6 +1501,7 @@ footer {
     box-shadow: 0px 0px 14px -7px rgba(245, 164, 37, 0.75);
   }
   .vote-button {
+    text-decoration: none;
     background-image: linear-gradient(
       90deg,
       rgb(10, 12, 55) 0%,
@@ -1568,6 +1588,14 @@ footer {
   .login-prompt {
     font-size: 1em;
   }
+
+  /* Notification Start */
+  .alert {
+    width: 50%;
+    height: auto;
+    font-size: 0.9em;
+  }
+  /* Notification End */
 }
 
 @media (min-width: 769px) {
