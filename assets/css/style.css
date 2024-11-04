@@ -1168,18 +1168,19 @@ footer {
 /* Vote End */
 
 /* admin session */
-/* index CRUD ADMIN */
+/* Title Styles */
 .feedback-title,
 .vote-title,
 .print-title,
-h1 {
+.transactions-title,
+.daftar-member-title {
   text-align: center;
   font-size: 1.8em;
   margin-bottom: 1em;
   color: #f3f3f3;
 }
 
-/* Table Styles */
+/* Container Styles */
 .table-container,
 .print-container {
   background-color: #18233a;
@@ -1189,14 +1190,17 @@ h1 {
   padding: 20px;
   border: 1px solid #f3f3f3;
 }
+
 .print-container label {
   color: #f3f3f3;
 }
 
+/* Table Styles */
 .crud-table,
 .feedback-table,
 .vote-table,
-.print-table {
+.print-table,
+.transactions-table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 1em;
@@ -1205,7 +1209,8 @@ h1 {
 .crud-table td,
 .feedback-table td,
 .vote-table td,
-.print-table td {
+.print-table td,
+.transactions-table td {
   color: #f3f3f3;
   padding: 10px;
   text-align: center;
@@ -1216,28 +1221,19 @@ h1 {
 .crud-table th,
 .feedback-table th,
 .vote-table th,
-.print-table th {
+.print-table th,
+.transactions-table th {
+  color: #f3f3f3;
   background-color: #060c1f;
   border: 1px solid #f3f3f3;
   padding: 10px;
   text-align: center;
   font-size: 1em;
-}
-
-.crud-table th,
-.feedback-table th,
-.vote-table th,
-.print-table th {
-  background-color: #f3f3f3;
   font-weight: bold;
   cursor: pointer;
 }
 
-.sortable:hover {
-  background-color: #f3f3f3;
-}
-
-/* Buttons */
+/* Button Styles */
 .edit-btn,
 .delete-btn,
 .submit-btn,
@@ -1289,6 +1285,7 @@ h1 {
   margin-bottom: 0.5em;
   font-weight: bold;
 }
+
 .form-group input[type="date"],
 .form-group select,
 .form-group button {
@@ -1297,15 +1294,35 @@ h1 {
 }
 
 .form-group button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+  text-decoration: none;
+  margin: 10px 0 0 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
   text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #f3f3f3;
+  display: block;
+  border: 0px;
+  width: 100%;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px rgba(245, 164, 37, 0.75);
+  background-image: linear-gradient(
+    90deg,
+    rgba(245, 164, 37, 1) 0%,
+    rgba(202, 136, 29, 1) 50%,
+    rgba(245, 164, 37, 1) 100%
+  );
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 .form-group button:hover {
-  background-color: #555;
+  background-position: right center;
+  color: #fff;
 }
 
 /* Item Limit and Pagination */
@@ -1315,7 +1332,11 @@ h1 {
   margin-bottom: 1em;
 }
 
-.item-limit,
+.item-limit {
+  color: #bebebe;
+  font-size: 1em;
+}
+
 .pagination {
   color: #bebebe;
   font-size: 1em;
@@ -1329,6 +1350,49 @@ h1 {
 
 .pagination .active-page {
   font-weight: bold;
+  color: #f3f3f3;
+}
+/* Edit Container */
+.edit-container {
+  background-color: #18233a;
+  width: 60%;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 20px;
+  border: 1px solid #f3f3f3;
+  border-radius: 8px;
+}
+
+/* Edit Title */
+.edit-title {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 1em;
+  color: #f3f3f3;
+}
+
+/* Form Styling */
+.edit-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.edit-form label {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #f3f3f3;
+}
+
+.edit-form input[type="text"],
+.edit-form input[type="date"],
+.edit-form textarea,
+.edit-form select {
+  padding: 0.6em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #222;
   color: #f3f3f3;
 }
 
